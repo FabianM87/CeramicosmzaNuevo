@@ -1,19 +1,17 @@
-import imagen from '../../img/funkoyo.png';
+import imagen from '../../img/logoCeramicos.png';
 import '../main.css';  
 import Icon from './CartWidget.jsx'
-import logo from '../../img/Logo.webp';
+import logo from '../../img/logoCeramicos.png';
 import { Disclosure} from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import {Link} from 'react-router-dom';
 
 const navigation = [
-  { name: 'Harry Potter', href: '#'},
-  { name: 'DC', href: '#'},
-  { name: 'Marvel', href: '#'},
-  { name: 'Animation', href: '#'},
-  { name: 'Disney', href: '#'},
-  { name: 'Movies', href: '#'},
-  { name: 'Rides', href: '#'}
+  { name: 'pisos', href: '#'},
+  { name: 'paredes', href: '#'},
+  { name: 'porcelanato', href: '#'},
+
+
 ]
 
 function classNames(...classes) {
@@ -56,7 +54,7 @@ function NavBar() {
                 
                 </div>
                 <div className=" dropdown flex invisible sm:visible sm:ml-6 self-center">
-                <button class="dropbtn">Serie</button>
+                <button class="dropbtn">Categoria</button>
                   <div className="dropdown-content flex  justify-end">
                     {navigation.map((item) => (
                       <Link to={`Category/${item.name}`}>

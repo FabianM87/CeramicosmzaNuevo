@@ -6,8 +6,8 @@ import {useParams} from 'react-router-dom';
 
 function ItemListConteiner(props) {
 
-  const {serie} = useParams();
-  const [funkos , setFunkos] = useState([]);
+  const {categoria} = useParams();
+  const [Ceramico , setCeramico] = useState([]);
   const [loading, setLoading] = useState(true)
   
 
@@ -15,28 +15,28 @@ function ItemListConteiner(props) {
     res(data)
   });
 
-  const getFunkos = async() => {
+  const getCeramico = async() => {
 
       promise.then((res) => {
         const products = res;
-        if(serie){
-          setFunkos(products.filter((product)=>product.series == serie))
+        if(categoria){
+          setCeramico(products.filter((product)=>product.categoria == categoria))
         }else{
-          setFunkos(products)
+          setCeramico(products)
         }
       })
   }
   useEffect(()=>{
     setTimeout(() => {
       setLoading(false);
-    getFunkos()},
+    getCeramico()},
      2000);
-  },[serie])
+  },[categoria])
 
 
   return (<>
     { loading ? <Loader/>
-    : <ItemList funkos={funkos}/>}
+    : <ItemList Ceramico={Ceramico}/>}
     </>
   )
 }

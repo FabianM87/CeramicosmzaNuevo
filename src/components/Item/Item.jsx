@@ -12,7 +12,7 @@ function Item(props){
       </div>
       <div className='text-center'>
       <h3 className="mt-4 text-sm text-gray-700">{props.title}</h3>
-      <h4 className="mt-4 text-sm text-gray-700">{props.series}</h4>
+      <h4 className="mt-4 text-sm text-gray-700">{props.categoria}</h4>
       <p className="mt-1 text-lg font-medium text-gray-900">${props.price}</p>
       </div> 
       <Link to={`/item/${props.id}`}> 

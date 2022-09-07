@@ -1,5 +1,5 @@
 .nav{
-    background: radial-gradient(circle, rgb(37, 36, 36) 0%, rgb(0, 0, 0) 70%);
+    background: radial-gradient(circle, rgb(61, 52, 52) 0%, rgb(0, 0, 0) 70%);
     padding: 5px;
 }
 .enlaces{
@@ -16,16 +16,17 @@
     width: 30px;
     height: 30px;
     margin: auto;
+    
 }
 
 .body{
-    background-color: #373737;
+    background-color: #575252;
 background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 0H0v36h36V0zM15.126 2H2v13.126c.367.094.714.24 1.032.428L15.554 3.032c-.188-.318-.334-.665-.428-1.032zM18 4.874V18H4.874c-.094-.367-.24-.714-.428-1.032L16.968 4.446c.318.188.665.334 1.032.428zM22.874 2h11.712L20 16.586V4.874c1.406-.362 2.512-1.468 2.874-2.874zm10.252 18H20v13.126c.367.094.714.24 1.032.428l12.522-12.522c-.188-.318-.334-.665-.428-1.032zM36 22.874V36H22.874c-.094-.367-.24-.714-.428-1.032l12.522-12.522c.318.188.665.334 1.032.428zm0-7.748V3.414L21.414 18h11.712c.362-1.406 1.468-2.512 2.874-2.874zm-18 18V21.414L3.414 36h11.712c.362-1.406 1.468-2.512 2.874-2.874zM4.874 20h11.712L2 34.586V22.874c1.406-.362 2.512-1.468 2.874-2.874z' fill='%23919191' fill-opacity='0.06' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 .button{
     color: #373737;
     background-color: rgb(213, 211, 214);
-    border: solid 3px rgb(69, 108, 95);
+    border: solid 3px rgb(10, 10, 10);
     border-radius: 10px;
     display: flex;
     width: 95%;
@@ -35,11 +36,11 @@ background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox=
 }
 .button:hover{
     font-weight: 600;
-    background-color: aquamarine;
+    background-color: rgba(76, 9, 16, 0.745);
     transition: background-color 2s;
 }
 .dropbtn {
-    background-color: black;
+    background-color: rgb(205, 33, 33);
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -60,7 +61,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox=
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -72,12 +73,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='36' height='36' viewBox=
 
 .pie {
     font-size: 1.6rem;
-    background: radial-gradient(circle, rgb(37, 36, 36) 0%, rgb(0, 0, 0) 70%);
+    background: radial-gradient(circle, rgb(61, 52, 52) 0%, rgb(0, 0, 0) 70%);
     flex-direction: column; }
   
   .footer_nav {
     flex-direction: row;
-    margin-bottom: 8px; }
+    margin-bottom: 10px; }
   
   .pie__titulo--md {
     color: white;
